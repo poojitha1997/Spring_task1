@@ -6,12 +6,11 @@ public class Actor
     String gender;
     int age;
 
-    //constructor to inject the values
-    public Actor(String name, String gender, int age) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
+    public Actor()
+    {
+
     }
+
 
     //setter and getter methods
     public String getName() {

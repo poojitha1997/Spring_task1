@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--beans for the class Actor-->
+    <bean id="movieid" class="com.stackroute.domain.Movie" autowire="byName"/>
+
+    <bean id="movieid2" class="com.stackroute.domain.Movie">
+        <constructor-arg name="actor" ref="actor1">
+        </constructor-arg>
+    </bean>
+
+    <bean id="actor" class="com.stackroute.domain.Actor">
+        <property name="name" value="sharukh"/><!--injecting the values through constructor-->
+        <property name="gender" value="male"/>
+        <property name="age" value="50"/>
+    </bean>
+
+    <bean id="actor1" class="com.stackroute.domain.Actor">
+        <property name="name" value="amirkhan"/><!--injecting the values through constructor-->
+        <property name="gender" value="male"/>
+        <property name="age" value="50"/>
+    </bean>
+
+
+
+
+
+
+</beans>
