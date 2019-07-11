@@ -1,16 +1,19 @@
 package com.stackroute.domain;
 
+import java.util.List;
+
 public class Movie
 {
-    Actor actor;
-    public void setActor(Actor actor) {
+    //list of objects of type Actor
+    List<Actor> actor;
+
+    public Movie(List<Actor> actor)
+    {
         this.actor = actor;
     }
-    //to call the to string method and display the information
     public void display()
     {
         System.out.println(actor.toString());
     }
-
 
 }

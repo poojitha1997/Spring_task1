@@ -5,10 +5,19 @@ public class Actor
     String name;
     String gender;
     int age;
+
+    //constructor to inject the values
+    public Actor(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
+
     //setter and getter methods
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -38,6 +47,8 @@ public class Actor
                 ", age=" + age +
                 '}';
     }
+
+
 
 
 
