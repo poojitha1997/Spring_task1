@@ -6,21 +6,9 @@
 
 
     <!--beans for the class Actor-->
-    <bean id="movieid" class="com.stackroute.domain.Movie" autowire="byName"/>
 
-
-
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <property name="name" value="sharukh"/><!--injecting the values through constructor-->
-        <property name="gender" value="male"/>
-        <property name="age" value="50"/>
+    <bean id="beanlifecycledemo" class ="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+        <property name="name" value="poojitha"/>
     </bean>
-
-
-
-
-
-
-
 
 </beans>
