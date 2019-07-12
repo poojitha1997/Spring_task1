@@ -5,8 +5,10 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <!--beans for the class Actor-->
+    <!--beans for the beanpostprocessdemobean-->
+    <bean id="beanpostprocess" class="com.stackroute.demo.BeanPostProcessorDemoBean"/>
 
+    <!--bean for beanlifecycledemobean-->
     <bean id="beanlifecycledemo" class ="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
         <property name="name" value="poojitha"/>
     </bean>
